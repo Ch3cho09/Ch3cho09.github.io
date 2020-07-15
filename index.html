@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="1.css" />
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+<style type="text/css">
+    html,body{ 
+    text-align:center;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: #E0E0E0;/*灰1*/
+  }
+
+  input{
+    width: 30px;
+    height: 30px;
+    margin: 3px 15%;
+  }
+
+    #down{
+      display: inline-block;
+      position: absolute;
+      left: 47.5%;
+      bottom: 10%;
+      height: 10%;
+    }
+
+    #dance{
+      display: inline;
+      position: absolute;
+      left: 30%;
+      margin-top: 0;
+    }
+
+    #submit1{
+      margin-top: 30px;
+      width: 5%;
+      height: 5%;
+    }
+
+    .dance{
+      height: 80px;
+    }
+ 
+    .secret{
+        height: 100%;
+        background:#F0F0F0;
+        width: 100%;
+    }
+    .title{
+        font-size: 40px;
+        font-family: 华文中宋;
+        color:#4F4F4F;/*灰3*/
+        border-bottom:1px solid #000;
+        border-top:1px solid #000;
+        width:45%;
+        padding: 10px;
+        margin-left: 30%;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+    }
+
+    .photo0{
+      display: block;
+      width: 25%;
+      margin-top: 0;
+      margin-left: 2%;
+      margin-right: 2%;
+      padding:0;
+      float: left;
+      border:10px white solid;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.4) ;
+    }
+
+    .text2{
+      display: inline-block;
+      width: 25%;
+      margin: 2% 3% 0 3%;
+      font-family: 华文中宋;
+      font-size: 20px;
+      font-weight: bold;
+      color:#FF5151;/*红1*/
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.3) ;
+    }
+
+</style>
+
+</head>
+<body>
+<div class="header1"> 
+  <div class="header2"></div>
+  <p id="Name">胡怡荃</p>
+  <p id="text1">There are some stories to tell you.</p>
+  <div> <img id="down" src="down.png"> </div>
+  </div>
+
+<div class="leader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fox's Game  <div id="dance"><img class="dance" src="dance.gif"></div></div>
+<div class="secret"><br/><br/>
+<p class="title">填入正确答案，了解我的故事。</p>
+<div><img src="secret1.jpg" class="photo0" style="margin-left: 4%"></div>
+<div><img src="secret2.jpg" class="photo0"></div>
+<div><img src="secret3.jpg" class="photo0" style="width: 28.5%"></div>
+<br><p class="text2" style="margin-left: 0">狐狸的数量?</p><p class="text2">尾巴的数量?</p><p class="text2">耳朵的数量？</p>
+<br><br><input type="text" id="number1" value=""><input type="text" id="number2" value=""><input type="text" id="number3" value="">
+<br><button id="submit1" onclick="judge()">提交</button>
+</div>
+
+<script type="text/javascript">
+
+        //导航栏问题参考了网上的jq写法
+    var oTop = $(".leader").offset().top;                               //返回导航到屏顶高度
+    var martop = $('.leader').outerHeight();                            //返回导航高
+    var sTop = 0;
+
+    window.onscroll=function () {                                       // 获取页面向上滚动的距离
+        sTop = $(this).scrollTop();                                     //返回滚动条垂直位置
+        if (sTop >= oTop) {                                             // 当导航栏到达屏幕顶端
+            
+            $(".leader").css({ "position": "fixed", "top": "0" });      //修改导航栏position属性，固定在屏幕顶端
+            $(".secret").css({ "margin-top": martop});                  //修改内容margin-top保证平滑过渡（猜测martop是一种平滑过渡手段）
+        } 
+        else {                                                          // 当导航栏脱离屏幕顶端时，回复原来的属性
+            $(".leader").css({ "position": "static" });
+            $(".secret").css({ "margin-top": "0" });
+        }
+    }
+        
+        //由于锁定和解锁滚动条功能太复杂我没学会，故改为填入正确答案后直接跳转新页面，以达成解密功能
+        //判断+跳转函数
+        function judge(){
+          var number1=document.getElementById("number1").value;
+          var number2=document.getElementById("number2").value;
+          var number3=document.getElementById("number3").value;
+
+          if (number1=="8"&&number2=="3"&&number3=="2") {
+            window.location.href="hyq2.html";
+          }
+          else{
+            alert("再试一次吧~");
+          }
+        }
+
+</script>
+
+</body>
+</html>

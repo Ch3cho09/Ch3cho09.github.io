@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="1.css" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+	<style type="text/css">
+    html,body{ 
+    text-align:center;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: #E0E0E0;/*灰1*/
+  }
+  ul,li
+  {margin:0;
+  	padding:0;}
+
+   .leader{
+   	text-align: left;
+   	z-index: 4;
+   }
+
+   .number{
+   	position: relative;
+   	width: 100%;
+   	height: 100%;
+   }
+
+   .bgp{
+  	position: absolute;
+  	left: 7%;
+  	width: 26%;
+  	z-index: -1;
+  	border:9px white solid;
+  	border-radius: 5px;
+  	box-shadow: 5px 10px 5px rgba(0,0,0,0.5) ;
+  }
+
+  .word{
+  	display: inline-block;
+  	position: absolute;
+  	font-family: 华文中宋;
+  	font-size: 18px;
+  	line-height: 25px;
+  	color: black;
+  	border-top:1px solid #000;
+  	width: 16%;
+  	height: 20%;
+  	text-align: left;
+  }
+
+    .photo0{
+    	position: relative;
+    	width: 100%;
+    	height: 140%;
+    	background-color: white;
+    }
+
+    .title{
+    	position: absolute;
+    	top: 8%;
+    	left: 14%;
+    	margin:0;
+    	padding:0 5px 5px 5px;
+    	font-family: 华文中宋;
+    	font-size: 50px;
+    	color:#E0E0E0;/*灰1*/
+    	border: 3px double #E0E0E0;/*灰2*/
+    	text-shadow: 2px 2px 2px rgba(0,0,0,0.7) ;
+    }
+
+    table{
+    	position: absolute;
+    	top: 30%;
+    	right: 14%;
+    }
+
+    #explain{
+    	font-family: 华文中宋;
+    	font-size: 20px;
+    	position: absolute;
+    	top: 20%;
+    	left: 15%;
+    	text-align: left;
+    }
+
+    .photo1{
+    	border-left:solid 50px white;
+    	border-right:solid 50px white;
+    	border-top:solid 20px white;
+    	line-height: 20%;
+    	text-align: center;
+    	position: relative;
+    	height:20%; 
+    }
+
+
+    .come{
+    	position: relative;
+    	width: 100%;
+    	height: 80%;
+    }
+
+    #bgp4{
+    	height: 80%;
+    	position: absolute;
+    	top: 10%;
+    	right: 10%;
+    	border:9px white solid;
+  	    border-radius: 5px;
+  	    box-shadow: 5px 10px 5px rgba(0,0,0,0.5) 
+    }
+
+    .In{
+    	font-family: 华文中宋;
+    	font-size: 20px;
+    	position: absolute;
+    	left: 20%;
+    }
+
+    input{
+    	height: 30px;
+    }
+
+    #submit{
+    	font-family: 华文中宋;
+    	font-size: 20px;
+    	padding: 3px;
+        width: 80px;
+        height: 40px;
+    }
+
+    .end{
+    	position: relative;
+    	width: 100%;
+    	height: 10%;
+    	background-color: white;
+    	box-shadow: 0px -5px 5px rgba(0,0,0,0.2);
+    }
+	</style>
+</head>
+<body>
+	<div class="header1" id="top" ref="top"> 
+  <div class="header2"></div>
+  <p id="Name">胡怡荃</p>
+  <p id="text1">There are some stories to tell you.</p>
+  <div> <img id="down" src="down.png"> </div>
+  </div>
+
+<div class="leader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fox's stories</div>
+
+<div class="number" id="number" ref="number">
+	<img class="bgp" src="bgp2.jpg" style="top:10%;">
+	<div><img src="20x1.png" style="position:absolute;width: 15%;top:8%;right:48%;">
+		<img src="20.png" style="position: absolute;width: 5%;top:16.5%;right: 47%;">
+		<div class="word" style="top:27%;right:37%;">介于成熟与不成熟的年龄<br>前方是无限的可能<br>有冲劲的同时也会冷静<br>精彩的人生还很长呢</div>
+	</div>
+	<div><img src="26x1.png" style="position: absolute;width: 18%;top: 5.5%;right: 18%;"></div>
+	<img src="26.png" style="position: absolute;width: 5%;top:16.5%;right: 18.5%;">
+	<div class="word" style="top:27%;right:9%;">最喜欢的温度<br>多在季节交替时出现<br>刚好的数字令人感到舒适<br>承上启下的积极态度</div>
+	<div>
+<img class="bgp" src="bgp3.jpg" style="bottom:10%;">
+</div>
+<img src="10x1.png" style="position: absolute;width: 15%;right: 48%;bottom:22%;">
+<img src="10.png" style="position: absolute;width: 5%;right: 47%;bottom: 35%;">
+<div class="word" style="bottom:15%;right:37%;">已经创作的影像数量<br>从零开始积少成多<br>只有实践才能不负时间<br>相信作品会越来越好</div>
+<img src="422x1.png" style="position:absolute;width: 17%;bottom:21%;right: 18.5%;">
+<img src="422.png" style="position: absolute;width:6%;right: 17%;bottom: 35%;">
+<div class="word" style="bottom:15%;right:8%;">已经收获的点赞数<br>每一个赞都是最好的鼓励<br>想用自己的力量帮助别人<br>每一次鼓励都是动力</div>
+	</div>
+
+<div class="photo0" id="photo0" ref="photo0">
+<p class="title">影像作品</p><br>
+<div id="explain">影像的魅力在于记录瞬间 留住美好<br>
+这是我的一些摄影作品 希望你会喜欢</div>
+<div id="photos">
+	<table>
+		<tr>
+			<th><img class="photo1" src="p-1.jpg" ></th><th><img class="photo1" src="p-2.jpg"></th><th><img class="photo1" src="p-3.jpg"></th>
+		</tr>
+		<tr>
+			<th><img class="photo1" src="p-4.jpg"></th><th><img class="photo1" src="p-5.jpg"></th><th><img class="photo1" src="p-6.jpg"></th>
+		</tr>
+	     <tr>
+			<th><img class="photo1" src="p-7.jpg"></th><th><img class="photo1" src="p-8.jpg"></th><th><img class="photo1" src="p-9.jpg"></th>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+<div class="come" id="come" ref="come">
+	<p class="title" style="color: black;border: 3px double black">与我交流</p><br>
+	<div id="explain" style="color: white;top: 28%">如果想知道更多我的故事 或者想向我分享你的故事<br>
+就填写下面的表单 和我多一些接触途径吧</div>
+<br><div class="In" style="top:45%;">姓名：<input type="text" value=""></div>
+<div class="In" style="top: 55%">邮件：<input type="text" value=""></div><div class="In" style="top:65%">需求：<input type="text" value="" style="height: 80px;"></div><br>
+<div class="In" style="bottom: 8%;left: 30%;"><button id="submit">告诉我</button></div>
+<img id="bgp4" src="bgp4.jpg">
+</div>
+
+<div class="end"></div>
+
+
+
+<script type="text/javascript">
+
+        //导航栏问题参考了网上的jq写法
+    var oTop = $(".leader").offset().top;                               //返回导航到屏顶高度
+    var martop = $('.leader').outerHeight();                            //返回导航高
+    var sTop = 0;
+
+    window.onscroll=function () {                                       // 获取页面向上滚动的距离
+        sTop = $(this).scrollTop();                                     //返回滚动条垂直位置
+        if (sTop >= oTop) {                                             // 当导航栏到达屏幕顶端
+            
+            $(".leader").css({ "position": "fixed", "top": "0" });      //修改导航栏position属性，固定在屏幕顶端
+            $(".number").css({ "margin-top": martop});                  //修改内容margin-top保证平滑过渡（猜测martop是一种平滑过渡手段）
+        } 
+        else {                                                          // 当导航栏脱离屏幕顶端时，回复原来的属性
+            $(".leader").css({ "position": "static" });
+            $(".number").css({ "margin-top": "0" });
+        }
+    }
+
+</script>
+</body>
+</html>
